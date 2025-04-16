@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Consulta de endereços por CEP utilizando a API ViaCEP">
+    <meta name="keywords" content="CEP, ViaCEP, endereço, consulta, API">
+    <meta name="author" content="devlopez7">
+    <title>ViaCEP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a class="logo-header" href="#">Logo</a>
+            <ul>
+                <li><a href="index.html">Buscar CEP</a></li>
+                <li><a href="https://viacep.com.br/" target="_blank">Sobre a API</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch">Ajuda</a></li>
+                <li><a href="https://www.linkedin.com/in/devlopez7/" target="_blank">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form method="get" action=".">
+            <div class="container-form">
+                <h1>Informe seu CEP</h1>
+                <input placeholder="CEP:" name="cep" type="text" id="cep" value="" maxlength="9"
+                    onblur="pesquisacep(this.value);" />
+                <input placeholder="Rua:" name="rua" type="text" id="rua" />
+                <input placeholder="Bairro:" name="bairro" type="text" id="bairro" />
+                <input placeholder="Cidade:" name="cidade" type="text" id="cidade" />
+                <input placeholder="UF:" name="uf" type="text" id="uf" />
+                <input placeholder="IBGE:" name="ibge" type="text" id="ibge" />
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p>© 2025 Desenvolvido por Devlopez7.</p>
+        <p>Background image: <a href="http://www.freepik.com">Designed by starline / Freepik</a></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
